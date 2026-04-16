@@ -4,7 +4,7 @@
 .vscode
 target
 node_modules
-.env
+.env.example
 Dockerfile*
 docker-compose*
 README.md

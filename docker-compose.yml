@@ -9,7 +9,7 @@ services:
       db:
         condition: service_healthy
     env_file:
-      - .env
+      - .env.example
     environment:
       SPRING_PROFILES_ACTIVE: dev
       DB_HOST: db
@@ -30,7 +30,7 @@ services:
     container_name: medalerta-mysql
     restart: unless-stopped
     env_file:
-      - .env
+      - .env.example
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
